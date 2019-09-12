@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		
@@ -16,9 +16,17 @@
 			display: block;
 		}
 		</style>
+		
+		<script>
+			function displayCourse(courseName){
+				$("#course-display").empty();
+				$("#course-display").load(courseName + ".html");
+			}
+		</script>
 	</head>
 	
 	<body>
+		<!-- HEADER -->
 		<div class="container-fluid bg-dark">
 			<div class="container w-75 pt-3 pb-5 text-white">
 				<div class="row">
@@ -38,6 +46,7 @@
 			</div>
 		</div>
 		
+		<!-- NAVIGATION BAR -->
 		<nav class="container navbar navbar-expand-lg navbar-primary w-75">
 			<span class="navbar-brand"> 
 				<img src="img/csumbLogo.jpg" class="border-right border-dark" width="200px">
@@ -51,9 +60,9 @@
 							Core
 						</a>
 						<div class="dropdown-menu" aria-labelledby="coreList">
-							<a class="dropdown-item" href="#">CST 300 : Major ProSeminar</a>
-							<a class="dropdown-item" href="#">CST 370 : Design and Analysis of Algorithms</a>
-							<a class="dropdown-item" href="#">CST 205 : Multimedia Design and Programming</a>
+							<a class="dropdown-item" href="#" onclick="displayCourse('CST300')">CST 300 : Major ProSeminar</a>
+							<a class="dropdown-item" href="#" onclick="displayCourse('CST205')">CST 205 : Multimedia Design and Programming</a>
+							<a class="dropdown-item" href="#" onclick="displayCourse('CST370')">CST 370 : Design and Analysis of Algorithms</a>
 						</div>
 					</li>
 					
@@ -62,9 +71,9 @@
 							Concentration
 						</a>
 						<div class="dropdown-menu" aria-labelledby="concList">
-							<a class="dropdown-item" href="#">CST 338 : Software Design</a>
-							<a class="dropdown-item" href="#">CST 336 : Internet Programming</a>
-							<a class="dropdown-item" href="#">CST 438 : Software Engineering</a>
+							<a class="dropdown-item" href="#" onclick="displayCourse('CST338')">CST 338 : Software Design</a>
+							<a class="dropdown-item" href="#" onclick="displayCourse('CST336')">CST 336 : Internet Programming</a>
+							<a class="dropdown-item" href="#" onclick="displayCourse('CST438')">CST 438 : Software Engineering</a>
 						</div>
 					</li>
 					
@@ -73,18 +82,20 @@
 							Final
 						</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="finalList">
-							<a class="dropdown-item" href="#">CST 361S : Technology Tutors</a>
-							<a class="dropdown-item" href="#">CST 311 : Intro to Computer Networks</a>
-							<a class="dropdown-item" href="#">CST 363 : Introduction to Database Systems</a>
-							<a class="dropdown-item" href="#">CST 325 : Graphics Programming</a>
-							<a class="dropdown-item" href="#">CST 499 : Directed Group Capstone</a>
+							<a class="dropdown-item" href="#" onclick="displayCourse('CST363')">CST 363 : Introduction to Database Systems</a>
+							<a class="dropdown-item" href="#" onclick="displayCourse('CST311')">CST 311 : Intro to Computer Networks</a>
+							<a class="dropdown-item" href="#" onclick="displayCourse('CST361S')">CST 361S : Technology Tutors</a>
+							<a class="dropdown-item" href="#" onclick="displayCourse('CST325')">CST 325 : Graphics Programming</a>
+							<a class="dropdown-item" href="#" onclick="displayCourse('CST499')">CST 499 : Directed Group Capstone</a>
 						</div>
 					</li>
 				</ul>
 			</div>
 		</nav>
 		
-		
+		<!-- CLASS INFORMATION AREA -->
+		<div class="container w-75" id="course-display">
+		<div>
 		
 	</body>
 </html>
