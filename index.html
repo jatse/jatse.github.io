@@ -19,8 +19,8 @@
 		
 		<script>
 			function displayCourse(courseName){
-				$("#course-view").empty();
-				$("#course-view").load(courseName + ".html");
+				$("#course-display").empty();
+				$("#course-display").load(courseName + ".html");
 			}
 		</script>
 	</head>
@@ -60,9 +60,9 @@
 							Core
 						</a>
 						<div class="dropdown-menu" aria-labelledby="coreList">
-							<a class="dropdown-item" href="#course-view" onclick="displayCourse('CST300')">CST 300 : Major ProSeminar</a>
-							<a class="dropdown-item" href="#course-view" onclick="displayCourse('CST205')">CST 205 : Multimedia Design and Programming</a>
-							<a class="dropdown-item" href="#course-view" onclick="displayCourse('CST370')">CST 370 : Design and Analysis of Algorithms</a>
+							<a class="dropdown-item" href="#course-display" onclick="displayCourse('CST300')">CST 300 : Major ProSeminar</a>
+							<a class="dropdown-item" href="#course-display" onclick="displayCourse('CST205')">CST 205 : Multimedia Design and Programming</a>
+							<a class="dropdown-item" href="#course-display" onclick="displayCourse('CST370')">CST 370 : Design and Analysis of Algorithms</a>
 						</div>
 					</li>
 					
@@ -71,9 +71,9 @@
 							Concentration
 						</a>
 						<div class="dropdown-menu" aria-labelledby="concList">
-							<a class="dropdown-item" href="#course-view" onclick="displayCourse('CST338')">CST 338 : Software Design</a>
-							<a class="dropdown-item" href="#course-view" onclick="displayCourse('CST336')">CST 336 : Internet Programming</a>
-							<a class="dropdown-item" href="#course-view" onclick="displayCourse('CST438')">CST 438 : Software Engineering</a>
+							<a class="dropdown-item" href="#course-display" onclick="displayCourse('CST338')">CST 338 : Software Design</a>
+							<a class="dropdown-item" href="#course-display" onclick="displayCourse('CST336')">CST 336 : Internet Programming</a>
+							<a class="dropdown-item" href="#course-display" onclick="displayCourse('CST438')">CST 438 : Software Engineering</a>
 						</div>
 					</li>
 					
@@ -82,11 +82,11 @@
 							Final
 						</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="finalList">
-							<a class="dropdown-item" href="#course-view" onclick="displayCourse('CST363')">CST 363 : Introduction to Database Systems</a>
-							<a class="dropdown-item" href="#course-view" onclick="displayCourse('CST311')">CST 311 : Intro to Computer Networks</a>
-							<a class="dropdown-item" href="#course-view" onclick="displayCourse('CST361S')">CST 361S : Technology Tutors</a>
-							<a class="dropdown-item" href="#course-view" onclick="displayCourse('CST325')">CST 325 : Graphics Programming</a>
-							<a class="dropdown-item" href="#course-view" onclick="displayCourse('CST499')">CST 499 : Directed Group Capstone</a>
+							<a class="dropdown-item" href="#course-display" onclick="displayCourse('CST363')">CST 363 : Introduction to Database Systems</a>
+							<a class="dropdown-item" href="#course-display" onclick="displayCourse('CST311')">CST 311 : Intro to Computer Networks</a>
+							<a class="dropdown-item" href="#course-display" onclick="displayCourse('CST361S')">CST 361S : Technology Tutors</a>
+							<a class="dropdown-item" href="#course-display" onclick="displayCourse('CST325')">CST 325 : Graphics Programming</a>
+							<a class="dropdown-item" href="#course-display" onclick="displayCourse('CST499')">CST 499 : Directed Group Capstone</a>
 						</div>
 					</li>
 				</ul>
@@ -94,7 +94,7 @@
 		</nav>
 		
 		<!-- CLASS INFORMATION AREA -->
-		<div class="container w-75" id="course-view">
+		<div class="container w-75" id="course-display">
 		<h3>Program Description</h3>
 		The CS Online degree completion program from California State University, Monterey Bay offers a unique blend of computer science theory and hands-on information technology practice.
 		This combination results in graduates exceptionally prepared to participate in the fast-paced information economy in jobs like:
